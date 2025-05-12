@@ -1,9 +1,9 @@
 The previous response is already formatted in Markdown, but here it is again, cleaned up and ready to use directly in a `README.md` file:
 
 ````markdown
-# RentHub - Android App (Kotlin)
+# Fast-Rental - Android App (Kotlin)
 
-**RentHub** is a mobile application developed in Kotlin using Android Studio. It serves as a marketplace that connects owners of rentable assets—such as tools, rooms, apartments, vehicles, and more—with people seeking to rent them. The platform provides a streamlined and secure experience for both parties, enabling effortless discovery, communication, and transaction of rental agreements.
+**Fast-Rental** is a mobile application developed in Kotlin using Android Studio. It serves as a marketplace that connects owners of rentable assets—such as tools, rooms, apartments, vehicles, and more—with people seeking to rent them. The platform provides a streamlined and secure experience for both parties, enabling effortless discovery, communication, and transaction of rental agreements.
 
 ---
 
@@ -66,8 +66,8 @@ The previous response is already formatted in Markdown, but here it is again, cl
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/renthub-android.git
-   cd renthub-android
+   git clone https://github.com/phobic-minion/Fast-Rental.git
+   cd Fast-Rental
 ````
 
 2. **Open the project in Android Studio.**
@@ -75,7 +75,7 @@ The previous response is already formatted in Markdown, but here it is again, cl
 3. **Configure Firebase:**
 
     * Connect the app to Firebase via Android Studio
-    * Enable Authentication, Firestore, and Storage
+    * Enable Authentication, Firebase, and Storage
 
 4. **Insert your Google Maps API key** in `local.properties`:
 
@@ -120,7 +120,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
 
 ---
 
@@ -128,8 +128,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For suggestions, feedback, or inquiries:
 
-**Email:** [support@renthubapp.com](mailto:support@renthubapp.com)
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)
+**Email:** [gmail.com/]()
+**GitHub:** [github.com/](https://github.com/phobic-minion)
 
 ---
 
@@ -138,6 +138,43 @@ For suggestions, feedback, or inquiries:
 *(Add screenshots of your app here, if available)*
 
 ```
+## Project Structure
 
-Let me know if you'd like help generating a `LICENSE` file or a sample project structure.
+FastRentalApp/
+├── app/
+│   ├── build.gradle (App-level Gradle file)
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── java/com/fastrental/
+│   │   │   │   ├── data/
+│   │   │   │   │   ├── local/
+│   │   │   │   │   │   ├── AppDatabase.kt
+│   │   │   │   │   │   ├── dao/
+│   │   │   │   │   │   │   ├── ProductDao.kt
+│   │   │   │   │   │   │   └── UserDao.kt
+│   │   │   │   │   │   ├── entities/
+│   │   │   │   │   │   │   ├── ProductEntity.kt
+│   │   │   │   │   │   │   └── UserEntity.kt
+│   │   │   │   ├── ui/
+│   │   │   │   │   ├── components/
+│   │   │   │   │   │   └── BottomNavigationBar.kt
+│   │   │   │   │   ├── navigation/
+│   │   │   │   │   │   └── NavigationRoutes.kt
+│   │   │   │   │   └── screens/
+│   │   │   │   │       ├── WelcomeScreen.kt
+│   │   │   │   │       ├── ProfileScreen.kt
+│   │   │   │   │       ├── LoginScreen.kt
+│   │   │   │   │       └── SignupScreen.kt
+│   │   │   │   └── MainActivity.kt
+│   │   │   ├── res/
+│   │   │   │   ├── drawable/
+│   │   │   │   ├── layout/ (optional for legacy XML layouts)
+│   │   │   │   └── values/
+│   │   │   │       ├── colors.xml
+│   │   │   │       ├── strings.xml
+│   │   │   │       └── themes.xml
+├── build.gradle (Project-level Gradle file)
+└── settings.gradle
+
 ```
